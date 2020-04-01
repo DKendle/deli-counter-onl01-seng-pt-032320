@@ -8,7 +8,6 @@ def line(katz_deli)
   else
    katz_deli.each_with_index do |name, index|
       name_index << "#{index + 1}. #{name}"
-      
     end
     puts "The line is currently: #{name_index.join(" ")}"
    end
@@ -30,9 +29,10 @@ def now_serving(katz_deli)
     puts "There is nobody waiting to be served!"
   else katz_deli.length > 0
     removed_names << katz_deli.each do |name| 
-     puts "Currently serving #{name}."
-      
-       
+      "#{name}"
+  end
+    puts "Currently serving #{name}."
+    
   end
   removed_names
 end
