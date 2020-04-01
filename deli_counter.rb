@@ -33,9 +33,8 @@ def now_serving(katz_deli)
      removed_names << "#{name}." 
     end
      puts "Currently serving #{removed_names.join(" "}"
+       katz_deli.shift()
   end
-  katz_deli.shift()
-end
   removed_names
 end
   
