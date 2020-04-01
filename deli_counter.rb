@@ -31,8 +31,8 @@ def now_serving(katz_deli)
     removed_names << katz_deli.each do |name| 
       "#{name}"
   end
-    puts "Currently serving #{name}."
-    
+    puts "Currently serving #{removed_names.join(" ")}"
+    removed_names.shift
   end
   removed_names
 end
