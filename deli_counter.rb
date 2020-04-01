@@ -24,7 +24,7 @@ end
   
   
 def now_serving(katz_deli)
- removed_names = Array.new
+
   if katz_deli.length == 0
     puts "There is nobody waiting to be served!"
   else katz_deli.length > 0
