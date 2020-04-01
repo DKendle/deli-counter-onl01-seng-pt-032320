@@ -30,11 +30,12 @@ def now_serving(katz_deli)
     puts "There is nobody waiting to be served!"
   else katz_deli.length > 0
     katz_deli.each do |name| 
-     removed_names << "Currently serving #{name}." 
+     removed_names << "#{name}." 
     end
-       katz_deli.shift()
-
+     puts "Currently serving #{removed_names}"
   end
+  katz_deli.shift()
+  removed_names
 end
   
   
